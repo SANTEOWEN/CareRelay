@@ -39,7 +39,7 @@ Create a CSS file and add the Tailwind directives.
 ```js
 module.exports = function (api) {
   api.cache(true);
-  return {
+  return 
     presets: [
       ["babel-preset-expo", { jsxImportSource: "nativewind" }],
       "nativewind/babel",
@@ -91,3 +91,6 @@ import { Link } from 'expo-router'
 <Link href="/Profile">Profile</Link>
 ``` 
 Make sure to create another component for the `href`
+
+---
+## Dynamic routing
