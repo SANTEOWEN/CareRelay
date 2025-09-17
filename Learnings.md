@@ -77,6 +77,10 @@ Switch the bundler to use the [Metro bundler](https://docs.expo.dev/guides/custo
   }
 }
 ```
+---
+## Creating Screen pages/components
+- This part is for creating new screens pages/components on the app.
+ 
 
 
 
