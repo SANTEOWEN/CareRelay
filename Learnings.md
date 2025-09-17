@@ -5,15 +5,15 @@ Create new expo app for react native
 `npx create-expo-app@latest "nameofproject"`
 
 ---
-
+   
 Installing **Nativewind** for styling
 1. You will need to install nativewind and its peer dependencies tailwindcss, react-native-reanimated and react-native-safe-area-context.
 ```shell
->npm install nativewind react-native-reanimated@~3.17.4 react-native-safe-area-context@5.4.0
+npm install nativewind react-native-reanimated@~3.17.4 react-native-safe-area-context@5.4.0
 npm install --dev tailwindcss@^3.4.17 prettier-plugin-tailwindcss@^0.5.11
 ```
 
-2. Run npx **tailwindcss init** to create a **tailwind.config.js** file
+2. Run ``npx tailwindcss init`` to create a **tailwind.config.js** file
 Add the paths to all of your method files in your tailwind.config.js file.
 ```js
 /** @type {import('tailwindcss').Config} */

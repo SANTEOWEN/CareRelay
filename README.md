@@ -1,4 +1,4 @@
-# Care Relayt👋
+# Care Relay👋
 
 I made this app for my Wife Bel for more convinient Nurse things process experience
 
