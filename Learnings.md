@@ -79,8 +79,21 @@ Switch the bundler to use the [Metro bundler](https://docs.expo.dev/guides/custo
 ```
 ---
 ## Creating Screen pages/components
-- This part is for creating new screens pages/components on the app.
+This part is for creating new screens pages/components on the app.
+1. To create new screen we need to change the `<Stack>` component into not self closing component
+``` Js
+<Stack>
  
+</Stack>
+```
+2. Now create a new `<Stack>` component for the the screens but with a dot notation property `Screen`.
+```JS
+<Stack>
+    <Stack.Screen>
+</Stack>
+``` 
+3. Add the following properties 
+//TODO: Continue the following guide on creating new screens.
 
 
 
