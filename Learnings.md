@@ -108,9 +108,10 @@ There's a lot of options attribute that we can use on like for example the `head
 <Stack>
     <Stack name='index' options={{ headerShown: false }}/>
 </Stack
-
-
 ```
+---
+## Creating tabs for the App
+//TODO: Document the creationg of Tabs.
 ---
 ## Routing and Navigations
 1. First import the Link method fronm `expo-router`
