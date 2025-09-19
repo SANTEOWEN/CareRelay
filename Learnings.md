@@ -81,22 +81,36 @@ Switch the bundler to use the [Metro bundler](https://docs.expo.dev/guides/custo
 ## Creating Screen pages/components
 This part is for creating new screens pages/components on the app.
 1. To create new screen we need to change the `<Stack>` component into not self closing component
-``` Js
+```js
 <Stack>
  
 </Stack>
 ```
 2. Now create a new `<Stack>` component for the the screens but with a dot notation property `Screen`.
-```JS
+```js
 <Stack>
     <Stack.Screen>
 </Stack>
 ``` 
-3. Add the following properties 
-//TODO: Continue the following guide on creating new screens.
+3. Add the following attributes 
+`Name` &#8594; is used to link the component screens that we want. It was like the `href` attribute
+`options` &#8594; it was used to define different options for the screen
+
+There's a lot of options attribute that we can use on like for example the `headerShown` its use to tell the app if the header will be showned or not.
+
+```js
+//This is for the name atttribute.
+<Stack>
+    <Stack name='index'/>
+</Stack>
+
+//This is for the options attribute
+<Stack>
+    <Stack name='index' options={{ headerShown: false }}/>
+</Stack
 
 
-
+```
 ---
 ## Routing and Navigations
 1. First import the Link method fronm `expo-router`
