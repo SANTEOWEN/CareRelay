@@ -1,18 +1,12 @@
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Icon } from '@/components/ui/icon';
 import { Text } from '@/components/ui/text';
+import { useTime } from '@/utils/TimeContext';
 import { LogIn, LogOut } from 'lucide-react-native';
 import React, { useEffect, useState } from 'react';
 import { View } from 'react-native';
-
-import { useTime } from '@/lib/TimeContext';
 
 
 export default function TimeTracker () {
@@ -24,7 +18,6 @@ export default function TimeTracker () {
   const [currentTime, setCurrentTime] = useState<Date>(new Date());
   const [day, setDay] = useState<Boolean>(false)
 
-    //This tells the state "Day" if the current time is day or not
     useEffect(() => {
       const interval = setInterval(() => {
         const hours: any = new Date().getHours()
@@ -35,7 +28,6 @@ export default function TimeTracker () {
       return () => clearInterval(interval)
     })
   
-    //This sets time for all of the time related functions.
     useEffect(() => {
       const timer = setInterval(() => setCurrentTime(new Date()), 1000);
       return () => clearInterval(timer);
@@ -65,8 +57,8 @@ export default function TimeTracker () {
     }
 
     const formatTime = (date: Date | null) => {
-    if (!date) return '--:--';
-    return date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+      if (!date) return '--:--';
+      return date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
     };
 
     const formatHours  = (hours: number) => {
@@ -91,13 +83,14 @@ export default function TimeTracker () {
 
     const statusDisplay = getStatusDisplay();
     const currentHours = getCurrentHours();
+    //For future purposes.
     const totalBreakHours = getTotalBreakTime()
 
     return (
         <Card className='w-full bg-[#fbfaf9]'>
           <CardHeader className='flex-row'>
             <View className='flex-1 items-start'>
-              <CardTitle className='text-base'>Daily Tracker {formatTime(currentTime)}</CardTitle>
+              <CardTitle className='text-base text-black'>Daily Tracker {formatTime(currentTime)}</CardTitle>
             </View>
             <View className='flex-1 items-end'>
               <View className='flex-row gap-2'>
