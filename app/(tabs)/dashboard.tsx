@@ -8,7 +8,6 @@ import { ScrollView, View } from "react-native";
 
 export default function dashboard() {
   return (
-    <View className="flex-1">
       <View className="p-4">
         <TimeProvider>
           <TimeTracker />
@@ -22,6 +21,5 @@ export default function dashboard() {
           <Activities/>
         </ScrollView>
       </View>
-    </View>
   );
 }

@@ -1,14 +1,14 @@
-import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { HeartPulse } from "lucide-react-native";
 import React from "react";
 import { Text, View } from "react-native";
+import { Badge } from "./ui/badge";
 
 //TODO: Create a contextProvider for the cases. and share it on the analytics. and dashboard.
 
 const Activities = () => {
   return (
-    <Card className="bg-[#fbfaf9] justify-center items-center py-3 my-1">
+    <Card className="bg-[#fbfaf9] justify-center items-center">
       <View className="flex-row">
         <View className="flex-none px-3 justify-center items-center">
           <HeartPulse size={25} />
@@ -26,10 +26,9 @@ const Activities = () => {
             </Text>
           </CardContent>
         </View>
-
-        <View className="justify-center items-center pr-4">
-          <Badge className="bg-[#d3d3d3]">
-            <Text className="text-base text-black">In Progress</Text>
+        <View className="justify-center items-center">
+          <Badge variant={"outline"}>
+            <Text>In Progress</Text>
           </Badge>
         </View>
       </View>

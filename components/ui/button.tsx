@@ -14,7 +14,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: cn(
-          'bg-primary active:bg-primary/90 shadow-sm shadow-black/5',
+          'bg-custom-accent active:bg-primary/90 shadow-sm shadow-black/5',
           Platform.select({ web: 'hover:bg-primary/90' })
         ),
         destructive: cn(

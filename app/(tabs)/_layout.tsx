@@ -3,11 +3,9 @@ import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { Tabs } from "expo-router";
 import React from "react";
-import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function TabsLayout() {
   return (
-    <SafeAreaProvider>
       <Tabs>
         <Tabs.Screen
           name="dashboard"
@@ -47,6 +45,5 @@ export default function TabsLayout() {
           }}
         />
       </Tabs>
-    </SafeAreaProvider>
   );
 }
