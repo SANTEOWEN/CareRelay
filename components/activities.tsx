@@ -17,7 +17,7 @@ const Activities = () => {
 
 
   return (
-    <Card className="justify-center items-center">
+    <Card className="justify-center items-center py-2">
       <View className="flex-row justify-between gap-1">
         <View className="flex-none px-2 justify-center">
           <Icon as={HeartPulse} size={"25"} />
@@ -26,7 +26,7 @@ const Activities = () => {
         < View className="flex-1 flex-col">
           <CardHeader className="px-0">
             <CardTitle>
-              <Text>General Checkup</Text>
+              <Text className="font-normal">General Checkup</Text>
             </CardTitle>
           </CardHeader >
           <CardContent className="px-0">
@@ -37,7 +37,7 @@ const Activities = () => {
         </View>
         <View className="flex-none justify-center px-2">
           <Badge variant={'outline'}>
-            <Text>In Progress</Text>
+            <Text>Queued</Text>
           </Badge>
         </View>
       </View>

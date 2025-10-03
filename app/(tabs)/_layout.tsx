@@ -15,7 +15,6 @@ export default function TabsLayout() {
               <MaterialIcons name="dashboard" size={24} color={color} />
             ),
             headerTitleAlign: "center",
-            tabBarActiveTintColor: "#154e63",
           }}
         />
         <Tabs.Screen
@@ -29,7 +28,6 @@ export default function TabsLayout() {
                 color={color}
               />
             ),
-            tabBarActiveTintColor: "#154e63",
             headerTitleAlign: "center",
           }}
         />
@@ -40,7 +38,6 @@ export default function TabsLayout() {
             tabBarIcon: ({ color }) => (
               <FontAwesome name="history" size={24} color={color} />
             ),
-            tabBarActiveTintColor: "#154e63",
             headerTitleAlign: "center",
           }}
         />

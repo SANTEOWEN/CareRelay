@@ -133,8 +133,8 @@ export default function TimeTracker() {
 
   return (
     <>
-      <Card>
-        <CardHeader className="flex-row gap-2">
+      <Card className="py-5">
+        <CardHeader className="flex-row gap-2 mb-2">
           <View className="flex-1 items-start">
             <CardTitle>
               <Text className="font-normal">
@@ -152,7 +152,7 @@ export default function TimeTracker() {
           </View>
         </CardHeader>
 
-        <CardContent className="flex-col gap-2">
+        <CardContent className="flex-col gap-5">
           <View className="flex-row justify-between gap-2">
             <View className="flex-1 items-start">
               <Text
@@ -174,7 +174,7 @@ export default function TimeTracker() {
 
           <View className="flex-row justify-between gap-2">
             <View className="flex-1 items-start">
-              <Text variant={"small"} className="text-muted-foreground">
+              <Text variant={"small"} className="text-muted-foreground font-normal">
                 Today
               </Text>
             </View>
